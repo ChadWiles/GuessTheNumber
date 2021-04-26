@@ -6,6 +6,7 @@ namespace GuessTheNumber
     {
         static void Main(string[] args)
         {
+            Random rand = new Random();
             int guess = 0;
             string welcome = "Guess a number between 1 and 25";
             int num = rand.Next(1,25);
@@ -13,7 +14,7 @@ namespace GuessTheNumber
 
             int i = 0;
 
-            while guess != num)
+            while (guess != num)
             {   
                 try
                 {
