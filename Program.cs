@@ -38,6 +38,8 @@ namespace GuessTheNumber
 
             i++;
             }
+        Console.WriteLine("Congrats, it took you " + i + " tries");
+        Console.ReadLine();
         }
         
 
