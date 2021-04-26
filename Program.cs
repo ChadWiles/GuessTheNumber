@@ -7,7 +7,7 @@ namespace GuessTheNumber
         static void Main(string[] args)
         {
             Random rand = new Random();
-            int guess = 7;
+            int guess = 0;
             string welcome = "Guess a number between 1 and 25";
             int num = rand.Next(1,25);
             Console.WriteLine(welcome);
@@ -39,8 +39,6 @@ namespace GuessTheNumber
             i++;
             }
         }
-        Console.WriteLine("Congrats, it took you " + i + " tries");
-        Console.ReadLine();
         
 
     }
