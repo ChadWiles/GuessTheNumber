@@ -28,8 +28,18 @@ namespace GuessTheNumber
                             Console.WriteLine("Too Low");
                         }
                 }
+                catch
+                {
+                    Console.WriteLine("Guess must be a number");
+                    i--;
+                }
+            
+
+            i++;
             }
         }
+        Console.WriteLine("Congrats, it took you " + i + " tries");
+        Console.ReadLine();
         
 
     }
