@@ -4,9 +4,20 @@ namespace GuessTheNumber
 {
     class Program
     {
-        static void Main(string[] args)
+        private static int GetGuess()
         {
-            Console.WriteLine("Hello World!");
+            int guess = 0;
+            try
+            {  
+            guess = Convert.ToInt32(Console.ReadLine());
+            }
+            catch (Exception)
+            {  
+            Console.WriteLine("You did not enter a valid guess.");
+            guess = GetGuess();
+            }
+            return guess;
         }
+        
     }
 }
